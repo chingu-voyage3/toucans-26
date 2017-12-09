@@ -1,4 +1,4 @@
-##USER STORIES:
+## USER STORIES:
 All application features or functionalities should be defined as user stories. So any development that happens should be associated with a user story. The following format should be used for writing the user story:
 
 **As a** < type of user >, 
@@ -8,13 +8,13 @@ All application features or functionalities should be defined as user stories. S
 User stories to be created as cards on the [**Trello Project Board**](https://trello.com/b/mfRS3FtK/chingu-voyage-3-toucans-26).
 
 
-##GENERAL DEVELOPMENT GUIDELINES/PROCESSES:
+## GENERAL DEVELOPMENT GUIDELINES/PROCESSES:
 * Master Branch stays untouched during Dev
 * Each development item to be a new branch
 * All code to be peer reviewed before it is merged to Dev Branch
 
 
-##GIT WORKFLOW:
+## GIT WORKFLOW:
 Normal code flow for any piece of development
 ----------------------------------------------
 Checkout new branch from Dev Branch
