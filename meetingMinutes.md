@@ -37,5 +37,5 @@ Git Rep Cloning – To be done by all members
 * Deciding product features
 * Preparing wireframes
 * Next stand up on Sun, 10th Dec 2017
-:simple_smile:_
+:simple_smile:
 
