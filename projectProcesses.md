@@ -15,10 +15,10 @@ User stories to be created as cards on the [**Trello Project Board**](https://tr
 
 
 ## GIT WORKFLOW:
-Normal code flow for any piece of development
-----------------------------------------------
-Checkout new branch from Dev Branch
-Complete coding & unit testing
-Push to remote repo
-Send Pull request to reviewer
-Reviewer to check and if ok merge to Dev branch
+Normal code flow for any piece of development |
+---------------------------------------------- |
+Checkout new branch from Dev Branch |
+Complete coding & unit testing |
+Push to remote repo |
+Send Pull request to reviewer |
+Reviewer to check and if ok merge to Dev branch |
