@@ -7,7 +7,7 @@ Home/Landing Page
 Login (Top Nav) *MJ: I think we should use a simple wireframe tool to design the UI. What do you think?*
 
 Register (Top Nav)
-* NGO - Form Needs Review before live *MJ: Yes, to begin with we can have an image upload functionality for the NGO to upload the NGO registration document. There is something called [Niti Aayog] (http://niti.gov.in/content/ngo-darpan) in India.*
+* NGO - Form Needs Review before live *MJ: Yes, to begin with we can have an image upload functionality for the NGO to upload the NGO registration document. There is something called [Niti Aayog](http://niti.gov.in/content/ngo-darpan) in India.*
 * User - Alert sent to NGO -> User is interested *MJ: Yes, we need to think about this. I was thinking that in iteration 1 of the app, to keep things simple we will have a user page only for NGO users and not for contributors (people who want to donate to the NGO). For contributors, we can have a 'contact us' kind of a form for collecting contact details and a message that will be visible to the concerned NGO user when they log in. However, while building the back-end we need to keep the design scalable for the future. So we should manitain User Types for instance.*
 
 Donate (Menu Option)
