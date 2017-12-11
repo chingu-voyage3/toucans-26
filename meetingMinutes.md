@@ -37,5 +37,12 @@ Git Rep Cloning – To be done by all members
 * Deciding product features
 * Preparing wireframes
 * Next stand up on Sun, 10th Dec 2017
-:simple_smile:
+
+
+### Sun, 10th Dec 2017
+
+* App iteration 1 feature list finalised. To be updated in features.md file by Minoy
+* All 3 team members to come up with some app prototype samples by Wed, 13th Dec 2017
+* Sprint 1 is from 11th Dec to 24th Dec (2 weeks). This sprint is only front-end and the intention is to cover all functionality of iteration 1.
+* Minoy to create user stories for Sprint 1 and assign it to all team members.
 
