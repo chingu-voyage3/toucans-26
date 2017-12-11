@@ -79,6 +79,6 @@ Good set of features above (Thanks Ashish!). I want to propose that for iteratio
 	2. ability to link carousel to events created by NGO user
 	3. Configuration of carousel should happen in Admin user profile page
 * User profile page - 
-	1. Admin user with carousel config functionality
+	1. ~~Admin user with carousel config functionality~~
 	2. NGO user with Events functionality
 * Logged in user display on home page with link to profile page
