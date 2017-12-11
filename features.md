@@ -65,3 +65,20 @@ Good set of features above (Thanks Ashish!). I want to propose that for iteratio
 * We need to also focus on good UI design and UX and that will require time.
 * A simple app that looks good and is easy to use will engage the end user more than a feature heavy app that is difficult to navigate.
 * Once iteration 1 is up and running and we are happy, we can plan to take it to the next level in iteration 2. 
+
+### Final functionality list for Iteration 1
+
+* About Us page
+* Contact page
+* Search page
+* Register page with verification functionality
+* Login Page
+* Nav bar having branding and About Us, Contact, Search, Register and Login buttons
+* Landing page carousel with 5 slides:
+	1. ability to configure the slide deck decide contents of the slide show
+	2. ability to link carousel to events created by NGO user
+	3. Configuration of carousel should happen in Admin user profile page
+* User profile page - 
+	1. Admin user with carousel config functionality
+	2. NGO user with Events functionality
+* Logged in user display on home page with link to profile page
