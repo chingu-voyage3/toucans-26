@@ -1,5 +1,6 @@
 # toucans-26
 
+
 # Project Name - NGO Aggregator
 
 ## Description
@@ -10,3 +11,10 @@ A web application which can be used by:
 
 ## Goal
 To provide a interface which can help user who want to contribute towards NGO's but dont have any idea for how to proceed or where to approach.
+
+## PROJECTS DOCS:
+
+* meetingMinutes.txt - all decisions taken in meetings/stand-ups to be recorded here in chronological order
+* projectProcesses.txt - describes the methodology for running the project
+* projectSetupDetails.txt - notes the ACT 1 related details that were discussed in the initial meetings.
+
