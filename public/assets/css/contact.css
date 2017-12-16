@@ -42,6 +42,7 @@ body {
 .contact-form-section {
     position: relative;
     top: 100px;
+    padding-bottom: 100px;
 }
 
 .contact-form-section h2 {
@@ -49,16 +50,55 @@ body {
     margin-bottom: 40px;
 }
 
-.send-btn {}
+.send-btn {
+    background: #04BFA3;
+    border: 2px solid #04BFA3;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 25px;
+    transition: all 0.3s;
+}
 
-.contact-icons {}
+.send-btn:hover {
+    background: transparent;
+    color: #04BFA3;
+    border: 2px solid #04BFA3;
+}
+
+.contact-us-padding {
+    padding-left: 100px;
+}
+
+.contact-icons {
+    border: 2px solid #47D0BC;
+    border-radius: 50%;
+    padding: 4px 10px;
+    position: absolute;
+    margin-top: 8px;
+}
 
 .contact-icons i {}
 
-.location-section {}
+.location-section {
+    display: inline-block;
 
-.location-section h3 {}
+    position: relative;
+    top: 0;
+    left: 65px;
+}
 
-.location-section address {}
+.location-section h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
 
-.location-section p {}
+.location-section address {
+    color: #626262;
+}
+
+.location-section p {
+    color: #626262;
+}
