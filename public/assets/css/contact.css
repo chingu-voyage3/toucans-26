@@ -37,4 +37,28 @@ body {
     left: 8px;
 }
 
-/*----*/
+/*--contact-form-section--*/
+
+.contact-form-section {
+    position: relative;
+    top: 100px;
+}
+
+.contact-form-section h2 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.send-btn {}
+
+.contact-icons {}
+
+.contact-icons i {}
+
+.location-section {}
+
+.location-section h3 {}
+
+.location-section address {}
+
+.location-section p {}
