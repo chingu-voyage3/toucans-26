@@ -1,0 +1,121 @@
+body {
+    background: #fff !important;
+    font-weight: 400;
+}
+
+/*--contact-banner-section--*/
+
+.contact-banner-section {
+    position: relative;
+    top: 55px;
+    background: linear-gradient(#0006, #0006), url(../imgs/contact-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 125px 0;
+
+}
+
+.contact-heading {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.down {
+    border: 2px solid #fff;
+    padding: 5px 16px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+}
+
+.down i {
+    color: #fff;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+/*--contact-form-section--*/
+
+.contact-form-section {
+    position: relative;
+    top: 100px;
+}
+
+.contact-form-section h2 {
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+}
+
+.send-btn {
+    background: #04BFA3;
+    border: 2px solid #04BFA3;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 25px;
+    transition: all 0.3s;
+}
+
+.send-btn:hover {
+    background: transparent;
+    color: #04BFA3;
+    border: 2px solid #04BFA3;
+}
+
+.contact-us-padding {
+    padding-left: 100px;
+}
+
+.contact-icons {
+    border: 2px solid #47D0BC;
+    border-radius: 50%;
+    padding: 4px 10px;
+    position: absolute;
+}
+
+
+.location-section {
+    display: inline-block;
+
+    position: relative;
+    left: 65px;
+    top: -20px;
+}
+
+.location-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.location-section address {
+    color: #626262;
+    font-size: 1.5rem;
+}
+
+.location-section p {
+    color: #626262;
+    font-size: 1.5rem;
+}
+
+/*--media queries--*/
+
+@media only screen and (max-width: 991px) {
+    .contact-us-padding {
+        padding-left: 15px;
+    }
+    .send-btn {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 351px) {
+    .contact-heading {
+        font-size: 3.5rem;
+    }
+}
