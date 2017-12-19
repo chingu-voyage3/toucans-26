@@ -1,0 +1,8 @@
+.search-display {
+    width: 100%;
+    background-color: white;
+}
+
+#location-display .dropdown {
+    display: inline-block;
+}
