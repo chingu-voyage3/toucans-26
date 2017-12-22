@@ -1,0 +1,16 @@
+.tabbable {
+    margin-top: 4rem;
+}
+
+#alpha h4 {
+    margin: 4rem 0;
+}
+
+#cause .dropdown {
+    margin: 4rem auto;
+}
+
+#location .dropdown {
+    display: inline-block;
+    margin: 4rem 2rem 4rem 0;
+}
