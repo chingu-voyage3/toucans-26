@@ -72,3 +72,13 @@
 #ftr a:active {
     color: yellow;
 }
+
+/* Navbar styles */
+.navbar-default {
+    background-color: #4cb5f5;
+    border: none;
+}
+
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
