@@ -23,28 +23,30 @@
 #ftr {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    background: url(../imgs/help.png) repeat-x bottom;
+    background-image: none;
     background-color: #34675c;
+    text-align: center;
     color: #fff;
-}
-
-@media (max-width: 768px) {
-    #ftr {
-        background: none;
-    }
-    #ftr .row {
-        opacity: 0.8;
-        text-align: center;
-    }
-}
-
-#ftr h3 {
-    color: #a3d6f5;
 }
 
 #ftr .row {
     background-color: #34675c;
     opacity: 1;
+}
+
+@media (min-width: 768px) {
+    #ftr {
+        background: url(../imgs/help.png) repeat-x bottom;
+        background-color: #34675c;
+        text-align: left
+    }
+    #ftr .row {
+        opacity: 0.9;
+    }
+}
+
+#ftr h3 {
+    color: #a3d6f5;
 }
 
 .glyphicon-heart {
