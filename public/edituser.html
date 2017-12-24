@@ -10,7 +10,6 @@
     <!--font-awesome-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css"></link>
-    <link rel="stylesheet" href="assets/css/login.css"></link>
 </head>
 
 <body>
@@ -40,13 +39,13 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="search.html">Search</a>
                     </li>
                     <li>
                         <a href="#">Register</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="login.html">Login</a>
                     </li>
                     <li>
@@ -57,32 +56,98 @@
         </div>
     </nav>
 
-    <div class="container login-form jumbotron">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-10 col-md-8 col-lg-6 col-xs-offset-1 col-md-offset-2 col-lg-offset-3">
-                <h3 class="text-center">g
-                    <span class="h1 text-warning">i</span>ve - Login Form</h3>
+            <div class="col-sm-6 col-sm-offset-3">
+                <p class="pull-right">Profile Status -
+                    <strong class="lead text-success">Verified</strong>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
                 <form>
                     <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" id="username" aria-describedby="user name" placeholder="Enter Username">
+                        <label for="exampleInputName2">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">UserName</label>
+                        <input type="text" class="form-control" id="username" placeholder="rockingUserName">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Login</button>
-                    <button type="button" class="btn btn-secondry btn-block">Forgot Password</button>
-                    <div class="lead text-right my-2">New NGO?
-                        <a href="#">Register Here..</a>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" id="address" placeholder="Address" rows="3"></textarea>
                     </div>
+                    <div class="form-group">
+                        <label for="state_province">State/Province</label>
+                        <input type="text" class="form-control" id="state_province" placeholder="State">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Pin Code:</label>
+                        <input type="text" class="form-control" id="pincode" placeholder="XXXXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Non-profit Website (if any)</label>
+                        <input type="text" class="form-control" id="website" placeholder="http://example.org">
+                    </div>
+                    <div class="form-group">
+                        <label for="sector">Sector</label>
+                        <select id="sector" class="form-control">
+                            <option>Children</option>
+                            <option>Disabled</option>
+                            <option>Education</option>
+                            <option>Environment</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="company_type">Company type</label>
+                        <input type="text" class="form-control" id="company_type" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="mission">NGO's Mission</label>
+                        <textarea class="form-control" id="mission" placeholder="Mission" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">NGO's Description</label>
+                        <textarea class="form-control" id="description" placeholder="Description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="idupload">ID Upload</label>
+                        <input type="file" id="idupload">
+                        <p class="help-block">Please add pdf containing all proofs.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="agreement"> I Agree to terms of use
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                            <button type="cancel" class="btn btn-danger">Cancel</button>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
                 </form>
             </div>
         </div>
     </div>
 
-    <br>
-    <br>
+
     <footer id="ftr" class="container-fluid">
         <div class="row">
             <div class="col-sm-3 col-sm-offset-1">
@@ -165,7 +230,7 @@
     <!-- Scripts Below -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="assets/js/search.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

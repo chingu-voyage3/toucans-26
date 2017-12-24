@@ -2,15 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>gIve</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <!--font-awesome-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--custom-css-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+
 </head>
 
 <body>
@@ -32,7 +40,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
@@ -49,7 +57,7 @@
                     <li>
                         <a href="login.html">Login</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -57,56 +65,98 @@
         </div>
     </nav>
 
-    <div class="container home-container">
-        <div class="row jumbotron">
-            <div class="col-xs-10 col-xs-offset-1">
-                <h3 class="text-center">No act of kindness, no matter how small, is ever wasted - Aesop</h3>
+    <!--contact section-->
+    <section class="container-fluid contact-banner-section">
+        <div class="container text-center">
+            <h1 class="contact-heading">Get in Touch</h1>
+            <span class="down">
+                <i class="fa fa-arrow-down"></i>
+            </span>
+        </div>
+    </section>
+
+
+    <section class="container-fluid contact-form-section">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h2>Send A mail</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Last name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Fast name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="usrtel" class="form-control" placeholder="Telephone" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" placeholder="Message" rows="7" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary send-btn">
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4 contact-us-padding">
+                    <h2>Contact Us</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-4">
+                            <span class="contact-icons">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <span class="location-section">
+                                <h3>Address</h3>
+                                <address>
+                                    ###, Walk way street
+                                    <br> City, Country
+                                </address>
+                            </span>
+                        </div>
+                        <div class="col-md-12 col-sm-4">
+                            <span class="contact-icons">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            <span class="location-section">
+                                <h3>Phone</h3>
+                                <p>+01#########</p>
+                            </span>
+                        </div>
+                        <div class="col-md-12 col-sm-4">
+                            <span class="contact-icons">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                            <span class="location-section">
+                                <h3>Email</h3>
+                                <p>exampl@example.com</p>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+    </section>
 
-    <!--Carousel -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <a href="https://350.org">
-                    <img src="https://cdn.350.org/wp-content/uploads/2017/02/350-share-img-home-1-1024x538.jpg" alt="Climate Change" style="width:100%;">
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://www.roomtoread.org">
-                    <img src="http://comedy.hk/wp-content/uploads/2013/03/room-to-read.jpg" alt="Girl Child Education" style="width:100%;">
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="http://www.activeminds.org">
-                    <img src="http://www.montclair.edu/news/images/feature/sized/active_minds_0005.jpg.jpg" alt="Mental Health" style="width:100%;">
-                </a>
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <footer id="ftr" class="container-fluid">
@@ -187,11 +237,11 @@
             </div>
         </div>
     </footer>
-    <!-- Scripts Below -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script src="assets/js/app.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
