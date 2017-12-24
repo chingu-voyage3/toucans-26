@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Non-profit</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	crossorigin="anonymous"></link>
+	<link rel="stylesheet" href="assets/css/register.css"></link>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display (hamburger display) -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">gIve</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Us<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Search</a></li>
+					<li><a href="edituser.html">Register</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- The Registration Page -->
+	<h3 class="text-center">Register Your Non-profit</h3>
+	<br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 col-sm-offset-4">
+				<form action="" method="get">
+					<label for="nonprofitName">Non-profit Name:</label>
+					<br>
+					<input type="text" name="nonprofitName" id="nonprofitName" class="inputStyle">
+					<br>
+					<h4>Address:</h4>
+					<div class="">
+						<label for="buildingStreet">Street/Building:</label>
+						<br>
+						<input type="text" name="buildingStreet" id="buildingStreet" class="inputStyle">
+						<br>
+
+						<label for="city">City:</label>
+						<br>
+						<input type="text" name="city" id="city" class="inputStyle">
+						<br>
+
+						<label for="pinCode">Pin-code:</label>
+						<br>
+						<input type="text" name="pinCode" id="pinCode" class="inputStyle">
+						<br>
+
+						<label for="stateProvince">State/Province:</label>
+						<br>
+						<input type="text" name="stateProvince" id="stateProvince" class="inputStyle">
+						<br>
+
+						<label for="country">Country:</label>
+						<br>
+						<input type="text" name="country" id="country" class="inputStyle">
+						<br>
+						<br>
+					</div>
+					<label for="cause">Non-profit Cause/Focus:</label>
+					<br>
+					<select name="cause" id="cause" class="inputStyle">
+						<option value="select">--select--</option>
+						<option value="environment">Environment</option>
+						<option value="children">Children</option>
+						<option value="animals">Animals</option>
+						<option value="mentalHealth">Mental Health</option>
+					</select>
+					<br>
+					<br>
+
+					<label for="description">Non-profit Description:</label>
+					<br>
+					<input type="text" name="description" id="description" class="inputStyle inputPadding" placeholder="What does your non-profit do?">
+					<br>
+					<br>
+					<label for="nonprofitId">Non-profit ID Upload<sup>1</sup>:</label>
+					<br>
+					<input type="file" name="nonprofitId" id="nonprofitId" class="" accept=".jpg, .png, .jpeg">
+					<br>
+
+					<h4>Contact Person:</h4>
+					<div class="">
+						<label for="contactName">Contact Name:</label>
+						<br>
+						<input type="text" name="contactName" id="contactName" class="inputStyle">
+						<br>
+
+						<label for="contactEmail">Contact Email:</label>
+						<br>
+						<input type="email" name="contactEmail" id="contactEmail" class="inputStyle">
+
+					</div>
+					<label for="userName">Choose Username<sup>2</sup>:</label>
+					<br>
+					<input type="text" name="userName" id="userName" class="inputStyle" minlength="8">
+					<br>
+
+					<label for="passWord">Choose Password<sup>2</sup>:</label>
+					<br>
+					<input type="password" name="passWord" id="passWord" class="inputStyle" minlength="8">
+					<br>
+					<br>
+					<input type="submit" name="submit" id="submit" class="btn btn-color">
+					<br>
+					<br>
+
+					<div class="">
+						<sup>1</sup>Only .jpg, .png and .jpeg files
+						<br>
+						<sup>2</sup>Minimum length 8 characters
+						<br>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- scripts -->
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+	crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	crossorigin="anonymous"></script>
+
+	<script src="assets/js/register.js"></script>
+</body>
+</html>

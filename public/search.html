@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
     <title>gIve</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="assets/css/index.css"></link>
+    <!--font-awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css"></link>
     <link rel="stylesheet" href="assets/css/search.css"></link>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display (hamburger display) -->
             <div class="navbar-header">
@@ -43,7 +44,7 @@
                         <a href="search.html">Search</a>
                     </li>
                     <li>
-                        <a href="#">Register</a>
+                        <a href="edituser.html">Register</a>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -56,193 +57,194 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-8">
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-
-                    <button type="submit" class="btn btn-default">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                </form>
+    <div id="content-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-8">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+    
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="tabbable">
-                    <!-- Only required for left/right tabs -->
-                    <ul class="nav nav-tabs nav-justified">
-                        <li class="active">
-                            <a href="#alpha" data-toggle="tab">Search Alphabetically</a>
-                        </li>
-                        <li>
-                            <a href="#cause" data-toggle="tab">Search By Cause</a>
-                        </li>
-                        <li>
-                            <a href="#location" data-toggle="tab">Search By Location</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="alpha">
-                            <h4 class="text-center">
-                                A
-                                <span class="h3 text-primary">
-                                    <strong>B</strong>
-                                </span> C D E F G H I J K L M N O P Q R S T U V W X Y Z
-                            </h4>
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>City</th>
-                                        <th>Country</th>
-                                        <th>Cause</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Baby Social Trust</td>
-                                        <td>Chennai</td>
-                                        <td>India</td>
-                                        <td>Environment</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bb Trust</td>
-                                        <td>Bangalore</td>
-                                        <td>India</td>
-                                        <td>Child Education</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bangladesh Foundation</td>
-                                        <td>Dhaka</td>
-                                        <td>Bangladesh</td>
-                                        <td>Child Education</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tab-pane" id="cause">
-                            <div class="dropdown">
-                                <button class="btn btn-large btn-primary dropdown-toggle" type="button" id="cause" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="true">
-                                    Select Cause
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="cause">
-                                    <li>
-                                        <a href="#">Children</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Disabled</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Education</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Environment</a>
-                                    </li>
-                                </ul>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="tabbable">
+                        <!-- Only required for left/right tabs -->
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="active">
+                                <a href="#alpha" data-toggle="tab">Search Alphabetically</a>
+                            </li>
+                            <li>
+                                <a href="#cause" data-toggle="tab">Search By Cause</a>
+                            </li>
+                            <li>
+                                <a href="#location" data-toggle="tab">Search By Location</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="alpha">
+                                <h4 class="text-center">
+                                    A
+                                    <span class="h3 text-primary">
+                                        <strong>B</strong>
+                                    </span> C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                                </h4>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>City</th>
+                                            <th>Country</th>
+                                            <th>Cause</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Baby Social Trust</td>
+                                            <td>Chennai</td>
+                                            <td>India</td>
+                                            <td>Environment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bb Trust</td>
+                                            <td>Bangalore</td>
+                                            <td>India</td>
+                                            <td>Child Education</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bangladesh Foundation</td>
+                                            <td>Dhaka</td>
+                                            <td>Bangladesh</td>
+                                            <td>Child Education</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>City</th>
-                                        <th>Country</th>
-                                        <th>Cause</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Baby Social Trust</td>
-                                        <td>Chennai</td>
-                                        <td>India</td>
-                                        <td>Environment</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bb Trust</td>
-                                        <td>Bangalore</td>
-                                        <td>India</td>
-                                        <td>Child Education</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bangladesh Foundation</td>
-                                        <td>Dhaka</td>
-                                        <td>Bangladesh</td>
-                                        <td>Child Education</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tab-pane" id="location">
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Country
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="country">
-                                    <li>
-                                        <a href="#">India</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bangladesh</a>
-                                    </li>
+                            <div class="tab-pane" id="cause">
+                                <div class="dropdown">
+                                    <button class="btn btn-large btn-primary dropdown-toggle" type="button" id="cause" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="true">
+                                        Select Cause
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="cause">
+                                        <li>
+                                            <a href="#">Children</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Disabled</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Education</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Environment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>City</th>
+                                            <th>Country</th>
+                                            <th>Cause</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Baby Social Trust</td>
+                                            <td>Chennai</td>
+                                            <td>India</td>
+                                            <td>Environment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bb Trust</td>
+                                            <td>Bangalore</td>
+                                            <td>India</td>
+                                            <td>Child Education</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bangladesh Foundation</td>
+                                            <td>Dhaka</td>
+                                            <td>Bangladesh</td>
+                                            <td>Child Education</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    City
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="city">
-                                    <li>
-                                        <a href="#">Chennai</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bangalore</a>
-                                    </li>
-                                </ul>
+                            <div class="tab-pane" id="location">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="country" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Country
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="country">
+                                        <li>
+                                            <a href="#">India</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bangladesh</a>
+                                        </li>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        City
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="city">
+                                        <li>
+                                            <a href="#">Chennai</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bangalore</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>City</th>
+                                            <th>Country</th>
+                                            <th>Cause</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Baby Social Trust</td>
+                                            <td>Chennai</td>
+                                            <td>India</td>
+                                            <td>Environment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bb Trust</td>
+                                            <td>Bangalore</td>
+                                            <td>India</td>
+                                            <td>Child Education</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bangladesh Foundation</td>
+                                            <td>Dhaka</td>
+                                            <td>Bangladesh</td>
+                                            <td>Child Education</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>City</th>
-                                        <th>Country</th>
-                                        <th>Cause</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Baby Social Trust</td>
-                                        <td>Chennai</td>
-                                        <td>India</td>
-                                        <td>Environment</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bb Trust</td>
-                                        <td>Bangalore</td>
-                                        <td>India</td>
-                                        <td>Child Education</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bangladesh Foundation</td>
-                                        <td>Dhaka</td>
-                                        <td>Bangladesh</td>
-                                        <td>Child Education</td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
+    
     <footer id="ftr" class="container-fluid">
         <div class="row">
             <div class="col-sm-3 col-sm-offset-1">

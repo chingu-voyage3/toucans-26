@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
     <title>gIve</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--font-awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css"></link>
-    <link rel="stylesheet" href="assets/css/index.css"></link>
+    <link rel="stylesheet" href="assets/css/edituser.css"></link>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display (hamburger display) -->
             <div class="navbar-header">
@@ -36,14 +37,13 @@
                     </li>
                     <li>
                         <a href="aboutUs.html">About Us
-                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="search.html">Search</a>
                     </li>
-                    <li>
-                        <a href="#">Register</a>
+                    <li class="active">
+                        <a href="edituser.html">Register</a>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -56,97 +56,108 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <p class="pull-right">Profile Status -
-                    <strong class="lead text-success">Verified</strong>
-                </p>
+    <div id="content-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <p class="pull-right">Profile Status -
+                        <strong class="lead text-success">Verified</strong>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputName2">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="username">UserName</label>
-                        <input type="text" class="form-control" id="username" placeholder="rockingUserName">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <textarea class="form-control" id="address" placeholder="Address" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="state_province">State/Province</label>
-                        <input type="text" class="form-control" id="state_province" placeholder="State">
-                    </div>
-                    <div class="form-group">
-                        <label for="city">City</label>
-                        <input type="text" class="form-control" id="city" placeholder="City">
-                    </div>
-                    <div class="form-group">
-                        <label for="pincode">Pin Code:</label>
-                        <input type="text" class="form-control" id="pincode" placeholder="XXXXXXX">
-                    </div>
-                    <div class="form-group">
-                        <label for="website">Non-profit Website (if any)</label>
-                        <input type="text" class="form-control" id="website" placeholder="http://example.org">
-                    </div>
-                    <div class="form-group">
-                        <label for="sector">Sector</label>
-                        <select id="sector" class="form-control">
-                            <option>Children</option>
-                            <option>Disabled</option>
-                            <option>Education</option>
-                            <option>Environment</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="company_type">Company type</label>
-                        <input type="text" class="form-control" id="company_type" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="mission">NGO's Mission</label>
-                        <textarea class="form-control" id="mission" placeholder="Mission" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="description">NGO's Description</label>
-                        <textarea class="form-control" id="description" placeholder="Description" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="idupload">ID Upload</label>
-                        <input type="file" id="idupload">
-                        <p class="help-block">Please add pdf containing all proofs.</p>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="agreement"> I Agree to terms of use
-                        </label>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                            <button type="cancel" class="btn btn-danger">Cancel</button>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <form id="edituser">
+                        <h4>Non-profit Details</h4>
+                        <hr>
+                        <div class="form-group">
+                            <label for="nonprofitName">Non-profit Name:</label>
+                            <input type="text" class="form-control" id="nonprofitName" placeholder="Ex: XYZ Org">
                         </div>
-                    </div>
-                    <br>
-                    <br>
-                </form>
+                        <div class="form-group">
+                            <label for="website">Non-profit Website (if any)</label>
+                            <input type="text" class="form-control" id="website" placeholder="http://example.org">
+                        </div>
+                        <div class="form-group">
+                            <label for="cause">Non-profit Cause/Focus:</label>
+                            <select id="cause" class="form-control">
+                                <option>Children</option>
+                                <option>Disabled</option>
+                                <option>Education</option>
+                                <option>Environment</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="company_type">Company type</label>
+                            <input type="text" class="form-control" id="company_type" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="mission">Non-profit Mission</label>
+                            <textarea class="form-control" id="mission" placeholder="Non-profit's Mission" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Non-profit Description</label>
+                            <textarea class="form-control" id="description" placeholder="What does your non-profit do?" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="idupload">Non-profit ID Upload</label>
+                            <input type="file" id="idupload">
+                            <p class="help-block">Please add one pdf containing all proofs.</p>
+                        </div>
+                        <br>
+                        <h4>Non-profit POC (Point of Contact)</h4>
+                        <hr>
+                        <div class="form-group">
+                            <label for="poc_name">POC Name</label>
+                            <input type="text" class="form-control" id="poc_name" placeholder="Point of Contact for NGO Ex: Minoy">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">UserName</label>
+                            <input type="text" class="form-control" id="username" placeholder="Ex: xyz_ngo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Min 8 Characters">
+                        </div>
+                        <br>
+                        <h4>Addess</h4>
+                        <hr>
+                        <div class="form-group">
+                            <label for="address">Street/Building:</label>
+                            <textarea class="form-control" id="address" placeholder="Address" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="state_province">State/Province</label>
+                            <input type="text" class="form-control" id="state_province" placeholder="State">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">Pin Code:</label>
+                            <input type="text" class="form-control" id="pincode" placeholder="XXXXXXX">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="agreement"> I Agree to terms of use.
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-pine">Submit</button>
+                                <button type="cancel" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
 
     <footer id="ftr" class="container-fluid">
         <div class="row">

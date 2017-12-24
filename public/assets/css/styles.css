@@ -5,4 +5,98 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #f4f5f7;
+}
+
+#content-area {
+    margin: 8rem 0 3rem 0;
+}
+
+/* Navigation Bar styles */
+
+.navbar-brand{
+	font-size: 35px;
+}
+
+.navbar-default {
+    background-color: #4cb5f5;
+    border: none;
+}
+
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+
+/* Footer styles */
+
+.social {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.social li {
+    display: inline-block;
+}
+
+
+#ftr {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-image: none;
+    background-color: #34675c;
+    text-align: center;
+    color: #fff;
+}
+
+#ftr .row {
+    background-color: #34675c;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+
+    .social {
+        width: 80%;
+    }
+    
+    #ftr {
+        background: url(../imgs/help.png) repeat-x bottom;
+        background-color: #34675c;
+        text-align: left
+    }
+    #ftr .row {
+        opacity: 0.9;
+    }
+}
+
+#ftr h3 {
+    color: #a3d6f5;
+}
+
+.glyphicon-heart {
+    color: orange;
+}
+
+/* unvisited link */
+#ftr a:link {
+    color: #fff;
+}
+
+/* visited link */
+#ftr a:visited {
+    color: #fff;
+}
+
+/* mouse over link */
+#ftr a:hover {
+    color: #cc1;
+}
+
+/* selected link */
+#ftr a:active {
+    color: yellow;
 }
