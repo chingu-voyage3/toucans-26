@@ -5,13 +5,33 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #f4f5f7;
+}
+
+#content-area {
+    margin: 8rem 0 3rem 0;
+}
+
+/* Navigation Bar styles */
+
+.navbar-brand{
+	font-size: 35px;
+}
+
+.navbar-default {
+    background-color: #4cb5f5;
+    border: none;
+}
+
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a {
+    color: #fff;
 }
 
 
 /* Footer styles */
 
 .social {
-    width: 80%;
+    width: 100%;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -38,6 +58,11 @@ body {
 }
 
 @media (min-width: 768px) {
+
+    .social {
+        width: 80%;
+    }
+    
     #ftr {
         background: url(../imgs/help.png) repeat-x bottom;
         background-color: #34675c;

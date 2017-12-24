@@ -10,8 +10,6 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <!--font-awesome-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!--custom-css-->
@@ -23,7 +21,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display (hamburger display) -->
             <div class="navbar-header">
@@ -52,7 +50,7 @@
                         <a href="search.html">Search</a>
                     </li>
                     <li>
-                        <a href="#">Register</a>
+                        <a href="edituser.html">Register</a>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -65,100 +63,97 @@
         </div>
     </nav>
 
-    <!--contact section-->
-    <section class="container-fluid contact-banner-section">
-        <div class="container text-center">
-            <h1 class="contact-heading">Get in Touch</h1>
-            <span class="down">
-                <i class="fa fa-arrow-down"></i>
-            </span>
-        </div>
-    </section>
+    <div id="content-area">
+        <!--contact section-->
+        <section class="container-fluid contact-banner-section">
+            <div class="container text-center">
+                <h1 class="contact-heading">Get in Touch</h1>
+                <span class="down">
+                    <i class="fa fa-arrow-down"></i>
+                </span>
+            </div>
+        </section>
 
 
-    <section class="container-fluid contact-form-section">
-        <div class="container">
+        <section class="container-fluid contact-form-section">
+            <div class="container">
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col-md-8">
-                    <h2>Send A mail</h2>
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Last name" required>
+                    <div class="col-md-8">
+                        <h2>Send A mail</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Fast name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="usrtel" class="form-control" placeholder="Telephone" required>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Fast name" required>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" placeholder="Message" rows="7" required></textarea>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="usrtel" class="form-control" placeholder="Telephone" required>
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-primary send-btn">
+                                        <i class="fa fa-paper-plane-o"></i>
+                                        Send</button>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" placeholder="Message" rows="7" required></textarea>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <button type="submit" class="btn btn-primary send-btn">
-                                    <i class="fa fa-paper-plane-o"></i>
-                                    Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-md-4 contact-us-padding">
-                    <h2>Contact Us</h2>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-4">
-                            <span class="contact-icons">
-                                <i class="fa fa-map-marker"></i>
-                            </span>
-                            <span class="location-section">
-                                <h3>Address</h3>
-                                <address>
-                                    ###, Walk way street
-                                    <br> City, Country
-                                </address>
-                            </span>
-                        </div>
-                        <div class="col-md-12 col-sm-4">
-                            <span class="contact-icons">
-                                <i class="fa fa-phone"></i>
-                            </span>
-                            <span class="location-section">
-                                <h3>Phone</h3>
-                                <p>+01#########</p>
-                            </span>
-                        </div>
-                        <div class="col-md-12 col-sm-4">
-                            <span class="contact-icons">
-                                <i class="fa fa-envelope-o"></i>
-                            </span>
-                            <span class="location-section">
-                                <h3>Email</h3>
-                                <p>exampl@example.com</p>
-                            </span>
-                        </div>
+                        </form>
                     </div>
 
+                    <div class="col-md-4 contact-us-padding">
+                        <h2>Contact Us</h2>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-4">
+                                <span class="contact-icons">
+                                    <i class="fa fa-map-marker"></i>
+                                </span>
+                                <span class="location-section">
+                                    <h3>Address</h3>
+                                    <address>
+                                        ###, Walk way street
+                                        <br> City, Country
+                                    </address>
+                                </span>
+                            </div>
+                            <div class="col-md-12 col-sm-4">
+                                <span class="contact-icons">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                                <span class="location-section">
+                                    <h3>Phone</h3>
+                                    <p>+01#########</p>
+                                </span>
+                            </div>
+                            <div class="col-md-12 col-sm-4">
+                                <span class="contact-icons">
+                                    <i class="fa fa-envelope-o"></i>
+                                </span>
+                                <span class="location-section">
+                                    <h3>Email</h3>
+                                    <p>exampl@example.com</p>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <footer id="ftr" class="container-fluid">
         <div class="row">
             <div class="col-sm-3 col-sm-offset-1">
