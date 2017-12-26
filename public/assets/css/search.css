@@ -7,10 +7,15 @@
 }
 
 #cause .dropdown {
-    margin: 4rem auto;
+    margin: 2rem auto;
 }
 
 #location .dropdown {
     display: inline-block;
     margin: 4rem 2rem 4rem 0;
+}
+
+.btn-pine {
+    background-color: #34675c;
+    color: #fff;
 }

@@ -5,3 +5,12 @@
 .login-form {
     margin-top: 5rem;
 }
+
+.register-link {
+    margin-top: 1rem;
+}
+
+.btn-pine {
+    background-color: #34675c;
+    color: #fff;
+}

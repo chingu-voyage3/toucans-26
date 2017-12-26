@@ -1,0 +1,12 @@
+#edituser .form-control {
+    border: 1px solid #34675c;
+}
+
+.btn-pine {
+    background-color: #34675c;
+    color: #fff;
+}
+
+hr {
+    border: 1px solid #34675c;
+}
