@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
     <title>gIve</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
-    <!--font-awesome-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css"></link>
-    <link rel="stylesheet" href="assets/css/login.css"></link>
+    <link rel="stylesheet" href="assets/css/eventlist.css"></link>
 </head>
 
 <body>
@@ -37,7 +36,6 @@
                     </li>
                     <li>
                         <a href="aboutUs.html">About Us
-                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li>
@@ -46,7 +44,7 @@
                     <li>
                         <a href="edituser.html">Register</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="login.html">Login</a>
                     </li>
                     <li>
@@ -58,25 +56,47 @@
     </nav>
 
     <div id="content-area">
-        <div class="container login-form">
+        <div class="container-fluid main-content">
             <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <h3 class="text-center">gIve - Login</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" aria-describedby="user name" placeholder="Enter Username">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="row">
+                        <div class="event">
+                            <div class="col-sm-3 event-img">
+                                <img src="assets/imgs/charity.jpg" class="img-responsive img-rounded" alt="">
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 event-details">
+                                <h2 class="event-title">Marathon for Child Education</h2>
+                                <p class="event-description">The almost neon shades of blue and green balance out the other two more conservative colors
+                                    and add a bright freshness that gives the combination some kick. This kind of scheme
+                                    might work well for a fitness brand.</p>
+                            </div>
+                            <span class="edit-btn glyphicon glyphicon-pencil pull-right"></span>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <div class="event">
+                            <div class="col-sm-3 event-img">
+                                <img src="assets/imgs/charity.jpg" class="img-responsive img-rounded" alt="">
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 event-details">
+                                <h2 class="event-title">Marathon for Child Education</h2>
+                                <p class="event-description">The almost neon shades of blue and green balance out the other two more conservative colors
+                                    and add a bright freshness that gives the combination some kick. This kind of scheme
+                                    might work well for a fitness brand.</p>
+                            </div>
+                            <span class="edit-btn glyphicon glyphicon-pencil pull-right"></span>
                         </div>
-                        <button type="submit" class="btn btn-pine btn-block">Login</button>
-                        <button type="button" class="btn btn-default btn-block">Forgot Password</button>
-                        <div class="register-link text-right my-2">New Nonprofit?
-                            <a href="#">Register Here</a>
+                        <div class="event">
+                            <div class="col-sm-3 event-img">
+                                <img src="assets/imgs/charity.jpg" class="img-responsive img-rounded" alt="">
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-1 event-details">
+                                <h2 class="event-title">Marathon for Child Education</h2>
+                                <p class="event-description">The almost neon shades of blue and green balance out the other two more conservative colors
+                                    and add a bright freshness that gives the combination some kick. This kind of scheme
+                                    might work well for a fitness brand.</p>
+                            </div>
+                            <span class="edit-btn glyphicon glyphicon-pencil pull-right"></span>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,7 +185,7 @@
     <!-- Scripts Below -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="assets/js/search.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

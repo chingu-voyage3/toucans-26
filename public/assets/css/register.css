@@ -1,0 +1,40 @@
+
+/*Colour Palette*/
+/*blue #4cb5f5; granite #b7b8b6; pine #34675c; fields #b3c100; light-grey #f4f5f7*/
+
+
+body {
+	background-color: #f4f5f7;
+}
+
+nav{
+	background-color: #4cb5f5;
+}
+
+.navbar-brand{
+	font-size: 35px;
+}
+
+/*For contolling the font color of Navbar*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*For styling the input elements*/
+.inputStyle{
+	border: 2px solid #34675c;
+	border-radius: 4px;
+	background-color: #f4f5f7;
+	width: 600px;
+}
+
+
+.inputPadding{
+	padding:0 0 80px 0;
+}
+
+.btn-color{
+	background-color: #34675c;
+	color: white;
+}

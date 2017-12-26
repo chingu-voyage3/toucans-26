@@ -7,68 +7,41 @@
     margin-top: 5rem;
 }
 
-.social {
-    width: 80%;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
+.slide{
+    width: 100%;
 }
 
-.social li {
-    display: inline-block;
-    float: left;
+.item {
+    height: 600px;
 }
 
-#ftr {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    background-image: none;
-    background-color: #34675c;
+.carousel-caption {
+    background-color: #b3c100;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.eventsHeader{
     text-align: center;
-    color: #fff;
+    color: #34675c;
+} 
+
+hr {
+    border: 1px solid #34675c;
 }
 
-#ftr .row {
+.caption{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    bottom: 0;
+    margin: 0 0 25px 20px;
     background-color: #34675c;
-    opacity: 1;
+    color: white;
+    opacity: 0.8;
 }
 
-@media (min-width: 768px) {
-    #ftr {
-        background: url(../imgs/help.png) repeat-x bottom;
-        background-color: #34675c;
-        text-align: left
-    }
-    #ftr .row {
-        opacity: 0.9;
-    }
-}
-
-#ftr h3 {
-    color: #a3d6f5;
-}
-
-.glyphicon-heart {
-    color: orange;
-}
-
-/* unvisited link */
-#ftr a:link {
-    color: #fff;
-}
-
-/* visited link */
-#ftr a:visited {
-    color: #fff;
-}
-
-/* mouse over link */
-#ftr a:hover {
-    color: #cc1;
-}
-
-/* selected link */
-#ftr a:active {
-    color: yellow;
+.thumbnail .caption {
+    padding: 9px;
+    color: white;
 }
