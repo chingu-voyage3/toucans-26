@@ -31,6 +31,9 @@ body {
 .dropdown-menu > li > p {
     display: block;
     padding: 3px 20px;
+    clear: both;
+    line-height: 1.42857143;
+    white-space: nowrap;
 }
 
 
