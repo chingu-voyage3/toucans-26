@@ -1,6 +1,18 @@
-.edit-btn {
-    padding: 0 10px 10px 0;
-    margin-top: -3rem;
+.tabbable {
+    margin-top: 4rem;
+}
+
+.tab-content {
+    margin-top: 5rem;
+}
+
+#cause .dropdown {
+    margin-bottom: 2rem;
+}
+
+#location .dropdown {
+    display: inline-block;
+    margin-bottom: 4rem;
 }
 
 .btn-pine {
@@ -8,19 +20,19 @@
     color: #fff;
 }
 
-.btn-add_event {
-    margin: 0;
+
+
+
+
+.edit-btn {
+    padding: 0 10px 10px 0;
+    margin-top: -3rem;
+    display: none;
 }
 
-.add_btn {
-    width: 25rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.no-p-left {
-    padding-left: 0;
-    margin-bottom: 2rem;
+.btn-pine {
+    background-color: #34675c;
+    color: #fff;
 }
 
 .event {
