@@ -1,19 +1,17 @@
 body {
-    background: #fff !important;
+
     font-weight: 400;
+    background-color: #f4f5f7;
 }
 
 /*--contact-banner-section--*/
 
 .contact-banner-section {
-    position: relative;
-    top: 55px;
-    background: linear-gradient(#0006, #0006), url(../imgs/contact-banner.jpg);
+    background: linear-gradient(#00000080, #00000080), url(../imgs/contact-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 125px 0;
-
+    padding: 200px 0;
 }
 
 .contact-heading {
@@ -40,8 +38,7 @@ body {
 /*--contact-form-section--*/
 
 .contact-form-section {
-    position: relative;
-    top: 100px;
+    padding: 100px 0 60px 0;
 }
 
 .contact-form-section h2 {
@@ -51,8 +48,8 @@ body {
 }
 
 .send-btn {
-    background: #04BFA3;
-    border: 2px solid #04BFA3;
+    background: #34675C;
+    border: 2px solid #34675C;
     border-radius: 30px;
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -64,8 +61,8 @@ body {
 
 .send-btn:hover {
     background: transparent;
-    color: #04BFA3;
-    border: 2px solid #04BFA3;
+    color: #34675C;
+    border: 2px solid #34675C;
 }
 
 .contact-us-padding {
@@ -73,16 +70,17 @@ body {
 }
 
 .contact-icons {
-    border: 2px solid #47D0BC;
-    border-radius: 50%;
-    padding: 4px 10px;
+    padding: 0px 15px 0px 15px;
     position: absolute;
 }
 
+.contact-icons i {
+    color: #34675C;
+    font-size: 1.8em;
+}
 
 .location-section {
     display: inline-block;
-
     position: relative;
     left: 65px;
     top: -20px;

@@ -15,8 +15,8 @@ body {
 
 /* Navigation Bar styles */
 
-.navbar-brand{
-	font-size: 35px;
+.navbar-brand {
+    font-size: 35px;
 }
 
 .navbar-default {
@@ -24,10 +24,10 @@ body {
     border: none;
 }
 
-.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
     color: #fff;
 }
-
 
 /* Footer styles */
 
@@ -63,7 +63,7 @@ body {
     .social {
         width: 80%;
     }
-    
+
     #ftr {
         background: url(../imgs/help.png) repeat-x bottom;
         background-color: #34675c;
@@ -83,21 +83,25 @@ body {
 }
 
 /* unvisited link */
+
 #ftr a:link {
     color: #fff;
 }
 
 /* visited link */
+
 #ftr a:visited {
     color: #fff;
 }
 
 /* mouse over link */
+
 #ftr a:hover {
     color: #cc1;
 }
 
 /* selected link */
+
 #ftr a:active {
     color: yellow;
 }
