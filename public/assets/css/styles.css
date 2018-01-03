@@ -9,6 +9,7 @@ body {
 }
 
 #content-area {
+    min-height: 55rem;
     margin: 8rem 0 3rem 0;
 }
 
