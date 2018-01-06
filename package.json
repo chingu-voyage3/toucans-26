@@ -1,0 +1,29 @@
+{
+  "name": "toucans-26",
+  "version": "1.0.0",
+  "description": "NGO Agreegator App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-voyage3/toucans-26.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chingu-voyage3/toucans-26/issues"
+  },
+  "homepage": "https://github.com/chingu-voyage3/toucans-26#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "firebase": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.8"
+  }
+}
