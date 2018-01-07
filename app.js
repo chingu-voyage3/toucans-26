@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-//const firebase = require('./firebase/firebase');
+
+const firebase = require('./firebase/firebase');
 
 const PORT = 3000;
 
