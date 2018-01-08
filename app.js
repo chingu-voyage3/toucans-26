@@ -16,6 +16,30 @@ app.get('/index', (req, res) => {
     res.render('pages/index', {activePage: 'index'});
 });
 
+app.get('/search', (req,res) => {
+    res.render('pages/search',{
+        activePage: 'search'
+    });
+});
+
+app.get('/ngo', (req,res) => {
+    res.render('pages/ngo',{
+        activePage: 'search'
+    });
+});
+
+app.get('/register', (req,res) => {
+    res.render('pages/edituser',{
+        activePage: 'edituser'
+    });
+});
+
+app.get('/contact', (req,res) => {
+    res.render('pages/contact', {
+        activePage: 'contact'
+    });
+});
+
 app.listen(3000, () => {
     console.log(`Server is Listening @ ${PORT}`);
 });
