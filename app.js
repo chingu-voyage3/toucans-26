@@ -24,13 +24,13 @@ app.get('/search', (req,res) => {
 
 app.get('/ngo', (req,res) => {
     res.render('pages/ngo',{
-        activePage: 'search'
+        activePage: false
     });
 });
 
 app.get('/register', (req,res) => {
     res.render('pages/edituser',{
-        activePage: 'edituser'
+        activePage: false
     });
 });
 
