@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+
 const firebase = require('./firebase/firebase');
 
 const PORT = 3000;
@@ -14,6 +15,18 @@ app.get('/login', (req, res) => {
 
 app.get('/index', (req, res) => {
     res.render('pages/index', {activePage: 'index'});
+});
+
+app.get('/aboutus', function(req, res){
+    res.render('pages/aboutUs', {activePage: 'aboutUs'});
+});
+
+app.get("/editevent", function(req, res){
+    res.render("pages/editEvent", {activePage: false});
+});
+
+app.get("/eventlist", function(req, res){
+    res.render("pages/eventList", {activePage: false});
 });
 
 app.listen(3000, () => {
