@@ -20,9 +20,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li id="aboutUs">
-                    <a href="aboutUs.html">About Us
-                        <span class="sr-only">(current)</span>
-                    </a>
+                    <a href="aboutUs.html">About Us</a>
                 </li>
                 <li id="search">
                     <a href="search.html">Search</a>
@@ -66,5 +64,8 @@
     </div>
 </nav>
 <script>
-    <%= activePage %>.classList.add("active")
+    <%
+    if(activePage) { %>
+        <%= activePage %>.classList.add("active"); 
+    <%} %>
 </script>

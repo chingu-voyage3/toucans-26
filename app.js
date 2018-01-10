@@ -17,16 +17,16 @@ app.get('/index', (req, res) => {
     res.render('pages/index', {activePage: 'index'});
 });
 
-app.get("/aboutus", function(req, res){
-    res.render("pages/aboutUs", {activePage: 'aboutUs'});
+app.get('/aboutus', function(req, res){
+    res.render('pages/aboutUs', {activePage: 'aboutUs'});
 });
 
 app.get("/editevent", function(req, res){
-    res.render("pages/editEvent", {activePage: 'editEvent'});
+    res.render("pages/editEvent", {activePage: false});
 });
 
 app.get("/eventlist", function(req, res){
-    res.render("pages/eventList", {activePage: 'eventList'});
+    res.render("pages/eventList", {activePage: false});
 });
 
 app.listen(3000, () => {
