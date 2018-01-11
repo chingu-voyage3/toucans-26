@@ -9,24 +9,48 @@ app.use(express.static('public'))
 app.set('views', './views') // specify the views directory
 app.set('view engine', 'ejs') // register the template engine
 
+app.get('/', (req, res) => {
+    res.render('pages/index', { activePage: 'index' });
+});
+
 app.get('/login', (req, res) => {
-    res.render('pages/login', {activePage: 'login'});
+    res.render('pages/login', { activePage: 'login' });
 });
 
-app.get('/index', (req, res) => {
-    res.render('pages/index', {activePage: 'index'});
+app.get('/search', (req, res) => {
+    res.render('pages/search', {
+        activePage: 'search'
+    });
 });
 
-app.get('/aboutus', function(req, res){
-    res.render('pages/aboutUs', {activePage: 'aboutUs'});
+app.get('/ngo', (req, res) => {
+    res.render('pages/ngo', {
+        activePage: false
+    });
 });
 
-app.get("/editevent", function(req, res){
-    res.render("pages/editEvent", {activePage: false});
+app.get('/register', (req, res) => {
+    res.render('pages/edituser', {
+        activePage: 'edituser'
+    });
 });
 
-app.get("/eventlist", function(req, res){
-    res.render("pages/eventList", {activePage: false});
+app.get('/contact', (req, res) => {
+    res.render('pages/contact', {
+        activePage: 'contact'
+    });
+});
+
+app.get('/aboutus', function (req, res) {
+    res.render('pages/aboutUs', { activePage: 'aboutUs' });
+});
+
+app.get("/editevent", function (req, res) {
+    res.render("pages/editEvent", { activePage: false });
+});
+
+app.get("/eventlist", function (req, res) {
+    res.render("pages/eventList", { activePage: false });
 });
 
 app.listen(3000, () => {
