@@ -1,0 +1,71 @@
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display (hamburger display) -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">gIve</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li id="index">
+                    <a href="/">Home</a>
+                </li>
+                <li id="aboutUs">
+                    <a href="/aboutus">About Us</a>
+                </li>
+                <li id="search">
+                    <a href="/search">Search</a>
+                </li>
+                <li id="edituser">
+                    <a href="/register">Register</a>
+                </li>
+                <li id="login">
+                    <a href="/login">Login</a>
+                </li>
+                <li id="contact">
+                    <a href="/contact">Contact</a>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria- expanded="false">
+
+                        NGO User
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        <li class="dropdown-header">
+                            NGO Name
+                        </li>
+
+                        <li id="profile">
+                            <a href="#">Profile</a>
+                        </li>
+                        <li id="event">
+                            <a href="/eventlist">Events</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li id="logout">
+                            <a href="#">Log out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    <%
+    if(activePage) { %>
+        <%= activePage %>.classList.add("active"); 
+    <%} %>
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <link rel="stylesheet" href="assets/css/login.css"></link>
+</head>
+
+
+<body>
+    <% include ../partials/header %>
+
+    <div id="content-area">
+        <div class="container login-form">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h3 class="text-center">gIve - Login</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="user name" placeholder="Enter Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-pine btn-block">Login</button>
+                        <button type="button" class="btn btn-default btn-block">Forgot Password</button>
+                        <div class="register-link text-right my-2">New Nonprofit?
+                            <a href="#">Register Here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% include ../partials/footer %>
+</body>
+
+</html>
