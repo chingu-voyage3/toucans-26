@@ -1,4 +1,3 @@
-require('dotenv').config({ path: 'variables.env' });
 const firebase = require('firebase/app');
 const database = require('firebase/database');
 
