@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { check, validationResult } = require('express-validator/check');
-const firebaseModel = require('../model/firebaseModel');
+const firebaseServices = require('../services/firebaseServices');
 
 router.get('/', (req, res) => {
     res.render('pages/contact', {
@@ -21,7 +21,7 @@ router.post('/', [
     if (!errors.isEmpty()) {
         return res.status(422).json({ errors: errors.mapped() });
     }
-    firebaseModel.push('contact', req.body)
+    firebaseServices.push(req.firebase, 'contact', req.body )
         .then(() => {
             res.redirect('/');
         })

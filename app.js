@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 require('dotenv').config({ path: 'variables.env' });
+const firebase = require('./firebase/firebase');
 
 const PORT = 3000;
 
@@ -20,7 +21,7 @@ app.use('/login', require('./controller/loginController'));
 
 app.use('/nonprofit', require('./controller/nonProfitController'));
 
-app.use('/contact', require('./controller/contactController'));
+app.use('/contact',firebase.getFirebaseConn, require('./controller/contactController'));
 
 app.use("/events", require('./controller/eventController'));
 

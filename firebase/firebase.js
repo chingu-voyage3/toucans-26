@@ -15,4 +15,9 @@ const fb = {};
 //sigleton
 fb.database = firebase.database();
 
-module.exports = fb;
+module.exports = {
+    getFirebaseConn: (req, res, next) => {
+        req.firebase = fb;
+        next();
+    }
+};
