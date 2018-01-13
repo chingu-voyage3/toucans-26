@@ -1,3 +1,7 @@
+/**
+ * Contains Business logic related to Contact Page.
+ */
+
 const router = require('express').Router();
 const { check, validationResult } = require('express-validator/check');
 const firebaseServices = require('../services/firebaseServices');
@@ -21,6 +25,7 @@ router.post('/', [
     if (!errors.isEmpty()) {
         return res.status(422).json({ errors: errors.mapped() });
     }
+    //if no validation errors the push to DB
     firebaseServices.push(req.firebase, 'contact', req.body )
         .then(() => {
             res.redirect('/');

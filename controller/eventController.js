@@ -1,3 +1,7 @@
+/**
+ * This page is responsible for Logics regarding Events
+ */
+
 const router = require('express').Router();
 
 router.get("/edit", function (req, res) {
