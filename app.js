@@ -27,6 +27,10 @@ app.use("/events", require('./controller/eventController'));
 
 app.use('/about', require('./controller/aboutUsController'));
 
+app.get('*', (res,req) => {
+    
+});
+
 app.listen(3000, () => {
     console.log(`Server is Listening @ ${PORT}`);
 });
