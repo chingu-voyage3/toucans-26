@@ -28,7 +28,7 @@ app.use("/events", require('./controller/eventController'));
 app.use('/about', require('./controller/aboutUsController'));
 
 app.get('*', (res,req) => {
-    
+    res.render('pages/404');
 });
 
 app.listen(3000, () => {
