@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Strait');
+
+body{
+    font-family: 'Strait', sans-serif;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.sec-pad{
+    padding: 70px 0; 
+}
+.custom{
+    max-width: 75%;
+    background: #183926;color: #fff;
+    display: block;
+    margin: 0 auto;
+    display: run-in;
+    animation: zoom 1s 0.5s linear forwards;
+}
+h1{
+    font-size: 110px !important;
+}
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 40px;
+}
+
+@keyframes zoom{
+    0% {
+        transform: scale(0)
+    }
+    25% {
+        transform: scale(0.25)
+    }
+    50% {
+        transform: scale(0.5)
+    }
+    75% {
+        transform: scale(0.75)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
