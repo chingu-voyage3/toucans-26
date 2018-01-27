@@ -48,5 +48,14 @@ router.get("/edit/:id", async function (req, res) {
     }
 });
 
+router.get("/remove/:id", async function (req, res) {
+    try {
+        const snapshot = await firebaseServices.remove(req.firebase, `events/${req.params.id}`);
+        res.redirect('/events');
+    } catch(err) {
+        //TODO: Redirect to 404
+    }
+});
+
 
 module.exports = router;

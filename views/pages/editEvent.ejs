@@ -16,7 +16,7 @@
                     <form action="/events/add" method="POST">
                         <div class="form-group">
                             <label for="title">Event Title</label>
-                            <input type="text" name="title" value="<% (event && event.title) %>" class="form-control" id="title" placeholder="Demo Title">
+                            <input type="text" name="title" value="<%= (event && event.title) %>" class="form-control" id="title" placeholder="Demo Title">
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
@@ -71,7 +71,9 @@
                             <div class="col-sm-12">
                                 <button type="submit" class="btn btn-default">Save</button>
                                 <button type="cancel" class="btn btn-warning">Cancel</button>
-                                <button type="delete" class="btn btn-danger">Delete</button>
+                                <% if(event) { %>
+                                    <a href="/events/remove/<%= event.id %>" class="btn btn-danger">Delete</a>
+                                <% } %>
                             </div>
                         </div>
                         <br>
