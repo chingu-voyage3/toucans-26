@@ -34,7 +34,7 @@ app.use((req, res, next) => {
     next();
 })
 
-app.get('/', require('./controller/homeController'));
+app.get('/',firebase.getFirebaseConn, require('./controller/homeController'));
 
 app.use('/login', require('./controller/loginController'));
 

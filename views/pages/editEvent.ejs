@@ -16,13 +16,13 @@
                     <form action="/events/add" method="POST">
                         <div class="form-group">
                             <label for="title">Event Title</label>
-                            <input type="text" name="title" class="form-control" id="title" placeholder="Demo Title">
+                            <input type="text" name="title" value="<% (event && event.title) %>" class="form-control" id="title" placeholder="Demo Title">
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
                                 <div class="form-group">
                                     <label for="date">Event Date</label>
-                                    <input type="date" name="date" class="form-control" id="date" placeholder="mm:dd:yyyy">
+                                    <input type="date" name="date" value="<%= (event && event.date) %>" class="form-control" id="date" placeholder="mm:dd:yyyy">
                                 </div>
                             </div>
                             <div class="col-sm-5 col-sm-offset-1">
@@ -35,32 +35,32 @@
                         </div>
                         <div class="form-group">
                             <label for="venue">Event Venue</label>
-                            <textarea class="form-control" id="venue" name="venue" placeholder="Venue" rows="3"></textarea>
+                            <input type="text" class="form-control" name="venue" id="venue" value="<%= (event && event.venue) %>" >
                         </div>
                         <div class="form-group">
                             <label for="state_province">State/Province</label>
-                            <input type="text" class="form-control" name="state_province" id="state_province" placeholder="State">
+                            <input type="text" class="form-control" name="state_province" value="<%= (event && event.state_province) %>" id="state_province" placeholder="State">
                         </div>
                         <div class="form-group">
                             <label for="city">City</label>
-                            <input type="text" class="form-control" name="city" id="city" placeholder="City">
+                            <input type="text" class="form-control" name="city" id="city" value="<%= (event && event.city) %>" placeholder="City">
                         </div>
                         <div class="form-group">
                             <label for="pincode">Pin Code:</label>
-                            <input type="text" class="form-control" name="pincode" id="pincode" placeholder="XXXXXXX">
+                            <input type="text" class="form-control" name="pincode" id="pincode" value="<%= (event && event.pincode) %>" placeholder="XXXXXXX">
                         </div>
                         <div class="form-group">
                             <label for="sector">Sector</label>
-                            <select id="sector" name="sector" class="form-control">
-                                <option>Children</option>
-                                <option>Disabled</option>
-                                <option>Education</option>
-                                <option>Environment</option>
+                            <select id="sector" name="sector" class="form-control" >
+                                <option >Children</option>
+                                <option >Disabled</option>
+                                <option >Education</option>
+                                <option >Environment</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="description">Event Description</label>
-                            <textarea class="form-control" name="description" id="description" placeholder="Description" rows="3"></textarea>
+                            <textarea class="form-control" name="description" id="description" value="<%= (event && event.description) %>" placeholder="Description" rows="3"><%= (event && event.description) %></textarea>
                         </div>
                         <div class="checkbox">
                             <label>
@@ -69,8 +69,9 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-default">Submit</button>
-                                <button type="cancel" class="btn btn-danger">Cancel</button>
+                                <button type="submit" class="btn btn-default">Save</button>
+                                <button type="cancel" class="btn btn-warning">Cancel</button>
+                                <button type="delete" class="btn btn-danger">Delete</button>
                             </div>
                         </div>
                         <br>

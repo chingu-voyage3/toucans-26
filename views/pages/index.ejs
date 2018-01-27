@@ -74,7 +74,21 @@
             <br>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-6">
+                    <% events.map((event) => { %>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="">
+                                    <img src="assets/imgs/charity.jpg" alt="">
+                                </a>
+                                <p class="caption">
+                                    <%= event.title %>
+                                    <br> <%= event.date %>
+                                    <br> <%= event.city %>
+                                </p>
+                            </div>
+                        </div>
+                    <% }) %>
+                    <!-- <div class="col-lg-6 col-sm-6">
                         <div class="thumbnail">
                             <a href="">
                                 <img src="assets/imgs/charity.jpg" alt="">
@@ -109,19 +123,7 @@
                                 <br> Bangalore
                             </p>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="thumbnail">
-                            <a href="">
-                                <img src="assets/imgs/charity.jpg" alt="">
-                            </a>
-                            <p class="caption">
-                                Walkathon
-                                <br> Dec 31, 2017
-                                <br> Bangalore
-                            </p>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

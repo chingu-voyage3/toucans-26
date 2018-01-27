@@ -1,5 +1,6 @@
 const firebase = require('firebase/app');
 const database = require('firebase/database');
+const storage = require('firebase/storage');
 
 firebase.initializeApp({
     apiKey: process.env.API_KEY,
@@ -14,6 +15,7 @@ const fb = {};
 
 //sigleton
 fb.database = firebase.database();
+fb.storage = firebase.storage();
 
 module.exports = {
     getFirebaseConn: (req, res, next) => {
