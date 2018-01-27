@@ -19,36 +19,18 @@
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                     <div class="row">
-                        <div class="event">
-                            <div class="col-sm-3 event-img">
-                                <img src="/assets/imgs/charity.jpg" class="img-responsive img-rounded" alt="">
-                            </div>
-                            <div class="col-sm-8 col-sm-offset-1 event-details">
-                                <h2 class="event-title">Marathon for Child Education</h2>
-                                <p class="event-description">The almost neon shades of blue and green balance out the other two more conservative colors and add a bright freshness that gives the combination some kick. This kind of scheme might work well for a fitness brand.</p>
-                            </div>
-                            <a href="/editevent"><span class="edit-btn glyphicon glyphicon-pencil pull-right"></span></a> 
-                        </div>
-                        <div class="event">
-                            <div class="col-sm-3 event-img">
-                                <img src="/assets/imgs/charity.jpg" class="img-responsive img-rounded" alt="">
-                            </div>
-                            <div class="col-sm-8 col-sm-offset-1 event-details">
-                                <h2 class="event-title">Marathon for Child Education</h2>
-                                <p class="event-description">The almost neon shades of blue and green balance out the other two more conservative colors and add a bright freshness that gives the combination some kick. This kind of scheme might work well for a fitness brand.</p>
-                            </div>
-                            <a href="/editevent"><span class="edit-btn glyphicon glyphicon-pencil pull-right"></span></a> 
-                        </div>
-                        <div class="event">
-                            <div class="col-sm-3 event-img">
-                                <img src="/assets/imgs/charity.jpg" class="img-responsive img-rounded" alt="">
-                            </div>
-                            <div class="col-sm-8 col-sm-offset-1 event-details">
-                                <h2 class="event-title">Marathon for Child Education</h2>
-                                <p class="event-description">The almost neon shades of blue and green balance out the other two more conservative colors and add a bright freshness that gives the combination some kick. This kind of scheme might work well for a fitness brand.</p>
-                            </div>
-                            <a href="/editevent"><span class="edit-btn glyphicon glyphicon-pencil pull-right"></span></a> 
-                        </div>
+                        <% events.map((event) => { %>
+                            <div class="event">
+                                    <div class="col-sm-3 event-img">
+                                        <img src="/assets/imgs/charity.jpg" class="img-responsive img-rounded" alt="">
+                                    </div>
+                                    <div class="col-sm-8 col-sm-offset-1 event-details">
+                                        <h2 class="event-title"><%= event.title %></h2>
+                                        <p class="event-description"><%= event.description %></p>
+                                    </div>
+                                    <a href="/events/edit/<%= event.id %>"</a><span class="edit-btn glyphicon glyphicon-pencil pull-right"></span></a> 
+                                </div>
+                        <% }) %>
                     </div>
                 </div>
             </div>

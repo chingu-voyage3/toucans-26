@@ -1,0 +1,11 @@
+<% if(flash) { %>
+    <% const categories = Object.keys(flash)
+        categories.map((category) => { %>
+        <% flash[category].map((msg) => { %>
+            <div class="flash flash--<%= category %>">
+                <p><%= category %> - <%= msg %> </p>
+                <button onClick="this.parentElement.remove()")>&times;</button>
+            </div>
+        <% }) %>
+    <% }) %>
+<% } %>
