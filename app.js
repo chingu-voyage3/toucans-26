@@ -27,8 +27,9 @@ app.use("/events", require('./controller/eventController'));
 
 app.use('/about', require('./controller/aboutUsController'));
 
-app.get('*', (res,req) => {
-    res.render('pages/404');
+app.get('*', (req,res) => {
+    // res.render('pages/aboutUs', { activePage: 'aboutUs' });
+    res.render('pages/404', { activePage: false });
 });
 
 app.listen(3000, () => {
