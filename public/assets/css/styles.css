@@ -106,3 +106,28 @@ body {
 #ftr a:active {
     color: yellow;
 }
+
+/** Flashes **/
+.flash {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.flash--success {
+    background: #52e65285;
+}
+
+.flash--error {
+    background: #f443369c;
+}
+
+.flash p {
+    margin: 0;
+    font-size: 1.7rem;
+}
